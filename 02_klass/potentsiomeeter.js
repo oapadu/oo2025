@@ -14,15 +14,19 @@ var Potentsiomeeter = /** @class */ (function () {
         if (uusNurk > this.nurkMax) {
             throw new Error("Liiga suur nurk");
         }
+        this.nurk = uusNurk;
     };
     Potentsiomeeter.prototype.getR = function () {
-        return -1;
+        /*arvutada potentsiomeetri hetketakistus*/
+        var ratio = (this.nurk - this.nurkMin) / (this.nurkMax - this.nurkMin);
+        var R = (this.rMin + (this.rMax - this.rMin) * ratio);
+        return R;
     };
     ;
     return Potentsiomeeter;
 }());
 var p1 = new Potentsiomeeter(-120, 120, 100, 500);
 p1.muudaNurk(80);
-console.log(p1);
-p1.muudaNurk(80);
-console.log(p1);
+console.log(p1.getR());
+p1.muudaNurk(40);
+console.log(p1.getR());

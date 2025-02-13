@@ -10,14 +10,18 @@ class Potentsiomeeter{
         if(uusNurk>this.nurkMax){
             throw new Error("Liiga suur nurk")
         }
+        this.nurk = uusNurk;
     }
     getR():number{
-        return -1;
+        /*arvutada potentsiomeetri hetketakistus*/
+        const ratio = (this.nurk - this.nurkMin) / (this.nurkMax - this.nurkMin);
+        const R = (this.rMin + (this.rMax- this.rMin) * ratio);
+        return R
     };
 }
 
 let p1:Potentsiomeeter = new Potentsiomeeter(-120, 120, 100, 500);
 p1.muudaNurk(80);
-console.log(p1);
-p1.muudaNurk(80);
-console.log(p1);
+console.log(p1.getR());
+p1.muudaNurk(40);
+console.log(p1.getR());
