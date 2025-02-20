@@ -1,1 +1,5 @@
 Mitu omavahel seotud klassi (nt. hoidla ja eksemplarid) ning näitrakendus nende kasutamiseks
+
+_github-pages-challenge-oapadu.oapadu
+
+cc15092ee91ec83b11a3c32cd2d9f5
