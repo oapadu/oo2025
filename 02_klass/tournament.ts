@@ -17,7 +17,7 @@ class Tournament {
             console.log("Turniiri alustamiseks on vaja vähemalt kahte mängijat.");
             return;
         }
-        console.log(`Turniir "${this.name}" on alanud! Osalejad: ${this.players.join(", " )}.`);
+        console.log(`Turniir "${this.name}" on alanud! Osalejad: ${this.players.join(", ")}.`);
         this.findWinner();
     }
 
