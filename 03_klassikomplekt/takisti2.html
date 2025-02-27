@@ -2,16 +2,14 @@
 <html>
   <head>
     <title>Takisti</title>
-    <script src="takisti1.js"></script>
+    <script src="takisti2.js"></script>
     <script>
         let r1;
         function startPage(){
-           r1=new Resistor(110, canvas1.getContext("2d"));           
+           r1=new Resistor(110, canvas1.getContext("2d"), 50, 150, 100);  
+           new Resistor(140, canvas1.getContext("2d"), 250, 100, 200)
         }
-        let r2;
-        function startPage(){
-            r2=new Resistor(130, canvas1.getContext("2d"));
-        }
+
     </script>
     <meta charset="utf-8">
   </head>
