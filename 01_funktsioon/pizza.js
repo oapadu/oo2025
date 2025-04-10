@@ -7,4 +7,4 @@ function pizzaCalc(diameeter, hind) {
 // Example usage:
 console.log(pizzaCalc(20, 8));
 console.log(pizzaCalc(28, 12));
-console.log(pizzaCalc(40, 20));
+console.log(pizzaCalc(50, 25));
