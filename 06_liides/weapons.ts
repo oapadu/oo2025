@@ -54,6 +54,7 @@ const inventory: Weapon[] = [
   new Sword("KV Multitool", 25),
   new LaserGun("Punane Laser", 40, 300),
   new Pistol("Glock", 15, 150),
+  new Pistol("Revolver", 40, 100),
 ];
 
 console.log("Mängija relvad:");
