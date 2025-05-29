@@ -11,8 +11,8 @@ describe("Taheloendaja testid", () => {
     test("Lause tähtede arv lauses", () => {
         const lause = new LauseTekst("pere pere test");
         expect(lause.loenda("p")).toBe(2);
-        expect(lause.loenda("e")).toBe(4);
-        expect(lause.loenda("t")).toBe(1);
+        expect(lause.loenda("e")).toBe(5);
+        expect(lause.loenda("t")).toBe(2);
     });
 
     test("Sõna objektide korduvkasutus lauses", () => {
